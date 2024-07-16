@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-image: url('picture1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 40px;
+}
+.links a {
+    color: white;
+    margin-left: 50px;
+    font-weight: 400;
+    position: relative;
+}
+.links a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: translateY(10px);
+    transition: .4s;
+    opacity: 0;
+}
+.links a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+.logo a {
+    color: white;
+    font-size: 3em;
+    font-weight: 1000;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    transition: .4s;
+}
+.logo a:hover {
+    color: rgb(171, 164, 164);
+    font-size: 50px;
+}
+.container {
+    position: absolute;
+    width: 75%;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.container .content {
+    width: 57%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.container .loger-box {
+    width: 43%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.content #lo {
+    color: white;
+    font-size: 4em;
+    padding: 70px 60px;
+    position: relative;
+    right: 5px;
+    top: 10px;
+}
+.text {
+    margin: 10px 70px;
+    position: relative;
+    bottom: 20px;
+}
+#pop {
+    transition: .4s;
+    color: rgb(192, 149, 50);
+}
+#pop:hover {
+    color: rgb(219, 197, 148);
+}
+#as {
+    position: relative;
+    bottom: 50px;
+}
+.text #hy {
+    position: relative;
+    right: 138px;
+    top: 30px;
+    color: rgb(240, 232, 232);
+    font-size: 50px;
+    font-weight: 700;
+}
+.hi {
+    font-size: 40px;
+    position: relative;
+    color: white;
+    right: 9px;
+}
+.text p {
+    color: white;
+    font-size: 15px;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#info {
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.log2{
+    opacity: 0;
+    position: relative;
+    top: 530px;
+    left: 160px;
+}
+.white{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+}
+
+.form-box {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    margin: auto;
+    margin-top: 290px;
+    transform: scale(2);
+    cursor: pointer;
+}
+.inputbox {
+    position: relative;
+    width: 310px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus + label,
+input:valid + label {
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+    cursor: pointer;
+}
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.forget label input {
+    margin-right: 3px;
+}
+.forget label a {
+    color: white;
+    text-decoration: none;
+}
+.forget label a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register {
+    font-size: .9em;
+    color: white;
+    align-items: center;
+    margin: 25px 0 10px;
+    text-align: center;
+}
+.register p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.register p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .links a {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    .form-box {
+        display: none;
+        margin-top: 50px; /* Move margin-top here for consistency */
+        transform: scale(.7); /* This might be redundant */
+    }
+    .logo a {
+        position: static;
+        font-size: 2em;
+        position: relative;
+        top: 40px;
+    }
+   
+    
+    
+    .container .loger-box { /* Typo? Should it be '.logger-box'? */
+       display: none;
+    }
+    .content #lo {
+        font-size: 2.5em;
+        padding: 20px;
+        position: relative;
+        top: 200px;
+        left: 70px;
+    }
+    .log2{
+        opacity: 1;
+    }
+    #as{
+        position: relative;
+        top: 200px;
+        left: 0px; 
+        width: 370px;
+    }
+    .slm{
+        position: relative;
+        top: 200px;
+        left: 12px; 
+        width: 370px;
+    }
+    .text #hy {
+       transform: scale(.7);
+       position: relative;
+        top: 230px;
+        left: 23px;
+    }
+    .hi {
+        font-size: 1em;
+        right: 0;
+        width: 600px;
+    }
+    .text p {
+        font-size: .8em;
+        width: 370px;
+        position: relative;
+        right: 85px;
+        top: 10px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    #info{
+        display: flex;
+        transform: scale(.7);
+       position: relative;
+        top: 230px;
+        left: 23px;
+
+    }
+    
+}
+
